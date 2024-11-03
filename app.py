@@ -39,7 +39,7 @@ def add_data_to_db(dataframe, db):
         con.close()
 
 # Initialize Streamlit app
-st.set_page_config(page_title="I can Retrieve Any SQL query")
+st.set_page_config(page_title="LLM_with_sql")
 st.header("Gemini App To Retrieve SQL Data")
 
 # Prompt for SQL conversion
