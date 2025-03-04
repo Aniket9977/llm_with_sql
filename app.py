@@ -13,7 +13,7 @@ load_dotenv()
 genai.configure(api_key=os.getenv('GOOGLE_API_KEY'))
 
 def get_gemini(question, prompt):
-    model = genai.GenerativeModel('gemini-pro-1')
+    model = genai.GenerativeModel('gemini-1.5-pro-001')
     # Combine the prompt and question into a single string
     combined_prompt = prompt[0] + "\n" + question
     response = model.generate_content(combined_prompt)
